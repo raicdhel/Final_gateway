@@ -32,6 +32,10 @@ spring:
           uri: http://localhost:8086
           predicates:
             - Path=/locations/** 
+        - id: locaview
+          uri: http://localhost:8087
+          predicates:
+            - Path= /locaViews/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -75,6 +79,10 @@ spring:
           uri: http://location:8080
           predicates:
             - Path=/locations/** 
+        - id: locaview
+          uri: http://locaview:8080
+          predicates:
+            - Path= /locaViews/**
       globalcors:
         corsConfigurations:
           '[/**]':
